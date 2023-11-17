@@ -33,10 +33,10 @@
 // | SHFT     | OUT_TOG |     |     |     |  7  | 8 |  9  |   |   | LEFT | DOWN |  RGT |
 //            | GUI     |     | SPC |     | ENT | 0 | ALT |
                         bindings = <
-   &kp TAB     &kp AMPS  &kp N2  &kp SQT &kp DQT  &trans    &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_N0  &kp N9    &kp BSPC
-   &bt &trans  &trans    &trans  &trans  &trans   &trans    &kp KP_N4  &kp KP_N5  &kp KP_N6  &trans     &kp UP    &trans
-   &kp LSHFT   &trans    &trans  &trans  &trans   &trans    &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp LEFT   &kp DOWN  &kp RIGHT
-                                 &trans  &trans   &trans    &trans     &kp KP_N0  &trans
+   &kp TAB    &kp AMPS  &kp N2  &kp SQT &kp DQT  &trans    &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_N0  &kp N9    &kp BSPC
+   &trans     &trans    &trans  &trans  &trans   &trans    &kp KP_N4  &kp KP_N5  &kp KP_N6  &trans     &kp UP    &trans
+   &kp LSHFT  &trans    &trans  &trans  &trans   &trans    &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp LEFT   &kp DOWN  &kp RIGHT
+                                &trans  &trans   &trans    &trans     &kp KP_N0  &trans
                         >;
                 };
 
