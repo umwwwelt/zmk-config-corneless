@@ -17,12 +17,12 @@
 // -----------------------------------------------------------------------------------------
 // |  TAB |  A  |  Z  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP   |
 // | CTRL |  Q  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  M  | ENT    |
-// | SHFT |  Z  |  W  |  X  |  C  |  V  |   |  B  |  N   |  ,  |  .  |  :  | RIGHT  |
+// | SHFT |  Z  |  W  |  X  |  C  |  V  |   |  B  |  N   |  ,  |  .  |  :   | RIGHT  |
 //                    | GUI | CMD | SPC |   | SPC | RSE  | ALT |
                         bindings = <
    &kp TAB    &kp A  &kp Z  &kp E     &kp R     &kp T          &kp Y        &kp U     &kp I      &kp O    &kp P      &kp BSPC
    &kp LCTRL  &kp Q  &kp S  &kp D     &kp F     &kp G          &kp H        &kp J     &kp K      &kp L    &kp M      &kp RET
-   &kp LSHFT  &kp Z  &kp W  &kp X     &kp C     &kp V          &kp B        &kp N     &kp COMMA  &kp DOT  &kp COLON  &kp RIGHT
+   &kp LSHFT  &kp Z  &kp W  &kp X     &kp C     &kp V          &kp B        &kp N     &kp COMMA  &kp DOT  &kp SEMI   &kp RIGHT
                             &kp LALT  &kp LGUI  &lt 1 SPACE    &lt 2 SPACE  &kp RGUI  &kp RALT
                         >;
                 };
