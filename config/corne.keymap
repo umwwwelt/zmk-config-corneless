@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
         &lt {
-                tapping-term-ms = <200>;
+                tapping-term-ms = <180>;
         };
 / {
 
@@ -30,7 +30,7 @@
                         label = "TAP_DANCE_1";
                         #binding-cells = <0>;
                         tapping-term-ms = <200>;
-                        bindings = <&kp E>, <&kp ESC>, <&kp ESC>;
+                        bindings = <&kp E>, <&kp RA(E)>, <&kp E>;
                 };
         };
 
