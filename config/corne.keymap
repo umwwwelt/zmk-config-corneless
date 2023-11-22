@@ -10,6 +10,16 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
+
+        behaviors {
+                td0: tap_dance_0 {
+                        compatible = "zmk,behavior-tap-dance";
+                        label = "TAP_DANCE_0";
+                        #binding-cells = <0>;
+                        tapping-term-ms = <200>;
+                        bindings = <&kp LSHFT>, <&kp ESC>;
+                };
+        };
         keymap {
                 compatible = "zmk,keymap";
 
@@ -22,7 +32,7 @@
                         bindings = <
    &kp TAB    &kp A      &kp Z  &kp E     &kp R     &kp T          &kp Y        &kp U     &kp I      &kp O    &kp P      &kp BSPC
    &kp LCTRL  &kp Q      &kp S  &kp D     &kp F     &kp G          &kp H        &kp J     &kp K      &kp L    &kp M      &kp RET
-   &kp LSHFT  &kp LSHFT  &kp W  &kp X     &kp C     &kp V          &kp B        &kp N     &kp COMMA  &kp DOT  &kp SEMI   &kp RIGHT
+   &td0       &kp LSHFT  &kp W  &kp X     &kp C     &kp V          &kp B        &kp N     &kp COMMA  &kp DOT  &kp SEMI   &kp RIGHT
                             &kp LALT  &kp LGUI  &lt 1 SPACE    &lt 2 SPACE  &kp RGUI  &kp RALT
                         >;
                 };
@@ -43,13 +53,13 @@
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  @  |  ^  |  !  |  #  |  %  |   |  ^  |  *  |  (  |  )  |  ~  | BKSP |
-// | CTRL |  ?  |  $  |     |     |     |   |  -  |  =  |  [  |  ]  |  /  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  &   |
+// | CTRL |  ?  |  $  |     |     |     |   |  -  |  +  |  [  |  ]  |  /  |  `   |
+// | SHFT |     |     |     |     |     |   |  _  |  =  |  {  |  }  | "|" |  &   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp TAB     &kp AT        &kp CARET     &kp EXCL      &kp HASH  &kp PRCNT    &kp BSLH   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE  &kp BSPC
-   &kp LCTRL   &kp QMARK     &kp DLLR      &trans        &trans    &trans       &kp MINUS  &kp EQUAL        &kp LBKT  &kp RBKT  &kp FSLH   &kp GRAVE
-   &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans    &trans       &kp UNDER  &kp PLUS         &kp LBRC  &kp RBRC  &kp PIPE   &kp AMPS
+   &kp LCTRL   &kp QMARK     &kp DLLR      &trans        &trans    &trans       &kp MINUS  &kp PLUS         &kp LBKT  &kp RBKT  &kp FSLH   &kp GRAVE
+   &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans    &trans       &kp UNDER  &kp EQUAL        &kp LBRC  &kp RBRC  &kp PIPE   &kp AMPS
                                            &trans        &trans    &trans       &trans     &trans           &trans
                         >;
                 };
