@@ -14,6 +14,21 @@
         };
 / {
 
+        macros {
+                e_acc: e_acc {
+                        label = "ZM_e_acc";
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings = <&macro_tap &kp RA(E) &kp E>;
+                };
+                a_acc: a_acc {
+                        label = "ZM_a_acc";
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings = <&macro_tap &kp RA(E) &kp A>;
+                };
+        };
+
 
 
         behaviors {
@@ -29,8 +44,8 @@
                         compatible = "zmk,behavior-tap-dance";
                         label = "TAP_DANCE_1";
                         #binding-cells = <0>;
-                        tapping-term-ms = <150>;
-                        bindings = <&kp E>, <&kp RA(E)>;
+                        tapping-term-ms = <250>;
+                        bindings = <&kp E>, <&e_acc>;
                 };
         };
 
