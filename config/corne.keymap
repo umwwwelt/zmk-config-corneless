@@ -52,7 +52,7 @@
                         compatible = "zmk,behavior-tap-dance";
                         label = "TAP_DANCE_2";
                         #binding-cells = <0>;
-                        tapping-term-ms = <250>;
+                        tapping-term-ms = <200>;
                         bindings = <&kp SEMI>, <&kp LS(SEMI)>;
                 };
         };
