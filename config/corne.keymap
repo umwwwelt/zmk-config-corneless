@@ -21,11 +21,17 @@
                         #binding-cells = <0>;
                         bindings = <&macro_tap &kp RA(E) &kp E>;
                 };
+                e_acc_g: e_acc_g {
+                        label = "ZM_e_acc_g";
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings = <&macro_tap &kp RA(GRAVE) &kp E>;
+                };
                 a_acc: a_acc {
                         label = "ZM_a_acc";
                         compatible = "zmk,behavior-macro";
                         #binding-cells = <0>;
-                        bindings = <&macro_tap &kp RA(E) &kp A>;
+                        bindings = <&macro_tap &kp RA(GRAVE) &kp A>;
                 };
         };
 
@@ -45,7 +51,7 @@
                         label = "TAP_DANCE_1";
                         #binding-cells = <0>;
                         tapping-term-ms = <250>;
-                        bindings = <&kp E>, <&e_acc>;
+                        bindings = <&kp E>, <&e_acc>, <&e_acc_g>;
                 };
 
                 td2: tap_dance_2 {
@@ -55,6 +61,16 @@
                         tapping-term-ms = <200>;
                         bindings = <&kp SEMI>, <&kp LS(SEMI)>;
                 };
+
+                td3: tap_dance_3 {
+                        compatible = "zmk,behavior-tap-dance";
+                        label = "TAP_DANCE_3";
+                        #binding-cells = <0>;
+                        tapping-term-ms = <200>;
+                        bindings = <&kp A>, <&a_acc>;
+                };
+
+
         };
 
         keymap {
