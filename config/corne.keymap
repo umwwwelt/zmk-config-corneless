@@ -97,7 +97,7 @@
                         // | SHFT |     |  Z  |  X  |  C  |  V  |   |  B  |  N   |  M  |  ,  |  .  | RIGHT  |
                         //                    | GUI | CMD | SPC |   | SPC | RSE  | ALT |
                                                 bindings = <
-                        &kp TAB    &kp Q      &kp W  &tde      &kp R     &kp T          &kp Y        &tdu     &kp I      &kp O      &kp P     &kp BSPC
+                        &kp TAB    &kp Q      &kp W  &tde      &kp R     &kp T          &kp Y        &tdu      &kp I      &kp O      &kp P     &kp BSPC
                         &kp LCTRL  &tda       &kp S  &kp D     &kp F     &kp G          &kp H        &kp J     &kp K      &kp L      &td2      &kp RET
                         &td0       &kp LSHFT  &kp Z  &kp X     &kp C     &kp V          &kp B        &kp N     &kp M      &kp COMMA  &kp DOT   &kp RIGHT
                                                      &kp LALT  &kp LGUI  &lt 1 SPACE    &lt 2 SPACE  &kp RGUI  &kp RALT
