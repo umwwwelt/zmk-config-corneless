@@ -76,7 +76,7 @@
                         bindings = <&kp A>, <&a_acc>;
                 };
 
-                tdu: tap_dance_3 {
+                tdu: tap_dance_4 {
                         compatible = "zmk,behavior-tap-dance";
                         label = "TAP_DANCE_4";
                         #binding-cells = <0>;
