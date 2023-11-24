@@ -52,7 +52,7 @@
                         bindings = <&kp LSHFT>, <&kp ESC>;
                 };
 
-                tde: tap_dance_1 {
+                td1: tap_dance_1 {
                         compatible = "zmk,behavior-tap-dance";
                         label = "TAP_DANCE_1";
                         #binding-cells = <0>;
@@ -68,7 +68,7 @@
                         bindings = <&kp SEMI>, <&kp LS(SEMI)>;
                 };
 
-                tda: tap_dance_3 {
+                td3: tap_dance_3 {
                         compatible = "zmk,behavior-tap-dance";
                         label = "TAP_DANCE_3";
                         #binding-cells = <0>;
@@ -76,7 +76,7 @@
                         bindings = <&kp A>, <&a_acc>;
                 };
 
-                tdu: tap_dance_3 {
+                td4: tap_dance_3 {
                         compatible = "zmk,behavior-tap-dance";
                         label = "TAP_DANCE_3";
                         #binding-cells = <0>;
@@ -95,8 +95,8 @@
                         // | SHFT |     |  Z  |  X  |  C  |  V  |   |  B  |  N   |  M  |  ,  |  .  | RIGHT  |
                         //                    | GUI | CMD | SPC |   | SPC | RSE  | ALT |
                                                 bindings = <
-                        &kp TAB    &kp Q      &kp W  &tde      &kp R     &kp T          &kp Y        &tdu      &kp I     &kp O      &kp P    &kp BSPC
-                        &kp LCTRL  &tda       &kp S  &kp D     &kp F     &kp G          &kp H        &kp J     &kp K     &kp L      &td2     &kp RET
+                        &kp TAB    &kp Q      &kp W  &td1      &kp R     &kp T          &kp Y        &td4      &kp I     &kp O      &kp P    &kp BSPC
+                        &kp LCTRL  &td3       &kp S  &kp D     &kp F     &kp G          &kp H        &kp J     &kp K     &kp L      &td2     &kp RET
                         &td0       &kp LSHFT  &kp Z  &kp X     &kp C     &kp V          &kp B        &kp N     &kp M     &kp COMMA  &kp DOT  &kp RIGHT
                                                      &kp LALT  &kp LGUI  &lt 1 SPACE    &lt 2 SPACE  &kp RGUI  &kp RALT
                         >;
