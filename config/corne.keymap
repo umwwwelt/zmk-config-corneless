@@ -43,6 +43,12 @@
                         #binding-cells = <0>;
                         bindings = <&macro_tap &kp RA(GRAVE) &kp U>;
                 };
+                arrow: arrow {
+                        label = "ZM_arrow";
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings = <&macro_tap &kp EQUAL &kp GT>;
+                };
         };
 
 
@@ -87,6 +93,14 @@
                         tapping-term-ms = <175>;
                         bindings = <&kp U>, <&u_acc>;
                 };
+
+                tdeq: tap_dance_5 {
+                        compatible = "zmk,behavior-tap-dance";
+                        label = "TAP_DANCE_5";
+                        #binding-cells = <0>;
+                        tapping-term-ms = <175>;
+                        bindings = <&kp EQUAL>, <&arrow>;
+                };
         };
 
         keymap {
@@ -129,7 +143,7 @@
                                                 bindings = <
                         &kp TAB     &kp QMARK  &kp CARET  &kp EXCL      &kp HASH      &kp PRCNT       &kp BSLH   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE  &kp BSPC
                         &kp LCTRL   &kp AT     &kp DLLR   &trans        &trans        &trans          &kp MINUS  &kp PLUS         &kp LBKT  &kp RBKT  &kp FSLH   &kp GRAVE
-                        &kp LSHFT   &trans     &trans     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &kp UNDER  &kp EQUAL        &kp LBRC  &kp RBRC  &kp PIPE   &kp AMPS
+                        &kp LSHFT   &trans     &trans     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &kp UNDER  &tdeq            &kp LBRC  &kp RBRC  &kp PIPE   &kp AMPS
                                                           &trans        &trans        &trans          &trans     &trans           &trans
                                                 >;
                 };
