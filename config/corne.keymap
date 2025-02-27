@@ -108,6 +108,7 @@
                         #binding-cells = <0>;
                         bindings = <&kp COMMA>, <&kp LEFT>;
                         mods = <(MOD_LGUI)>;
+                        keep-mods = <(MOD_LGUI)>;
                 };
         };
 
