@@ -101,6 +101,14 @@
                         tapping-term-ms = <175>;
                         bindings = <&kp EQUAL>, <&arrow>;
                 };
+
+                c_m: comma_morph {
+                        compatible = "zmk,behavior-mod-morph";
+                        label = "COMMA_MORPH";
+                        #binding-cells = <0>;
+                        bindings = <&kp COMMA>, <&kp LEFT>;
+                        mods = <(MOD_LGUI)>;
+                };
         };
 
         keymap {
@@ -115,7 +123,7 @@
                                                 bindings = <
                         &kp TAB    &kp Q      &kp W  &tde      &kp R     &kp T          &kp Y        &tdu      &kp I     &kp O      &kp P    &kp BSPC
                         &kp LCTRL  &tda       &kp S  &kp D     &kp F     &kp G          &kp H        &kp J     &kp K     &kp L      &td2     &kp RET
-                        &td0       &kp LSHFT  &kp Z  &kp X     &kp C     &kp V          &kp B        &kp N     &kp M     &kp COMMA  &kp DOT  &kp RIGHT
+                        &td0       &kp LSHFT  &kp Z  &kp X     &kp C     &kp V          &kp B        &kp N     &kp M     &c_m       &kp DOT  &kp RIGHT
                                                      &kp LALT  &kp LGUI  &lt 1 SPACE    &lt 2 SPACE  &kp RGUI  &kp RALT
                         >;
                 };
