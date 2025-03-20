@@ -12,7 +12,7 @@ This is a custom layout for the Corne split keyboard, designed for programming a
 ,-----------------------------------------.          ,-----------------------------------------.
 | Tab  |  Q  |  W  |  E* |  R  |  T  |                    |  Y  |  U* |  I  |  O  |  P  | Bksp |
 |------+-----+-----+-----+-----+-----|                    |-----+-----+-----+-----+-----+------|
-| Ctrl |  A* |  S  |  D  |  F  |  G  |                    |  H  |  J  |  K  |  L  |  ;* | Enter|
+| Ctrl |  A* |  S  |  D  |  F  |  G  |                    |  H  |  J  |  K  |  L  |  :* | Enter|
 |------+-----+-----+-----+-----+-----|                    |-----+-----+-----+-----+-----+------|
 |Sh/Esc|Shift|  Z  |  X  |  C  |  V  |                    |  B  |  N  |  M  |  ,† |  .  |Right |
 `-----------------+-----+-----+-----+---'              `---+-----+-----+-----+-----------------'
@@ -61,7 +61,7 @@ Multi-function Keys (Tap Dance)
 - E key: Tap once for E, twice for é, three times for è
 - A key: Tap once for A, twice for à
 - U key: Tap once for U, twice for ù
-- ; key: Tap once for ;, twice for :
+- : key: Tap once for :, shift for ;
 - = key: Tap once for =, twice for => (arrow)
 - Left Shift: Tap once for Shift, twice for Escape
 
