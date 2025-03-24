@@ -132,7 +132,7 @@
             bindings = <
                 &kp TAB    &kp Q      &kp W  &tde      &kp R     &kp T          &kp Y        &tdu      &kp I     &kp O      &kp P    &kp BSPC
                 &kp LCTRL  &tda       &kp S  &kp D     &kp F     &kp G          &kp H        &kp J     &kp K     &kp L      &semi_morph     &kp RET
-                &esc_shift LSHFT ESC &kp Z  &kp X     &kp C     &kp V          &kp B        &kp N     &kp M     &c_m       &kp DOT  &kp RIGHT
+                &esc_shift LSHFT ESC &kp LSHFT &kp Z  &kp X     &kp C     &kp V          &kp B        &kp N     &kp M     &c_m       &kp DOT  &kp RIGHT
                 &kp LALT  &kp LGUI  &lt 1 SPACE    &lt 2 SPACE  &kp RGUI  &kp RALT
             >;
         };
