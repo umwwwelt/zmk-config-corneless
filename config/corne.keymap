@@ -124,44 +124,44 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            // -----------------------------------------------------------------------------------------
+            // --------------------------------------   -------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP   |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  :  | ENT    |
             // | SHFT |     |  Z  |  X  |  C  |  V  |   |  B  |  N   |  M  |  ,  |  .  | RIGHT  |
             //                    | GUI | CMD | SPC |   | SPC | RSE  | ALT |
             bindings = <
-                &kp TAB    &kp Q      &kp W  &tde      &kp R     &kp T          &kp Y        &tdu      &kp I     &kp O      &kp P    &kp BSPC
-                &kp LCTRL  &tda       &kp S  &kp D     &kp F     &kp G          &kp H        &kp J     &kp K     &kp L      &semi_morph     &kp RET
-                &esc_shift LSHFT ESC &kp LSHFT &kp Z  &kp X     &kp C     &kp V          &kp B        &kp N     &kp M     &c_m       &kp DOT  &kp RIGHT
-                &kp LALT  &kp LGUI  &lt 1 SPACE    &lt 2 SPACE  &kp RGUI  &kp RALT
+                &kp TAB              &kp Q      &kp W        &tde         &kp R      &kp T    &kp Y  &tdu      &kp I     &kp O      &kp P        &kp BSPC
+                &kp LCTRL            &tda       &kp S        &kp D        &kp F      &kp G    &kp H  &kp J     &kp K     &kp L      &semi_morph  &kp RET
+                &esc_shift LSHFT ESC &kp LSHFT  &kp Z        &kp X        &kp C      &kp V    &kp B  &kp N     &kp M     &c_m       &kp DOT      &kp RIGHT
+                &kp LALT             &kp LGUI   &lt 1 SPACE  &lt 2 SPACE  &kp RCTRL  &kp RALT
             >;
         };
 
         lower_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB     | &       |     |  '  |  "  |  7  | 8 |  9  | 0 | 8 | 9    |  0   | BKSP |
-            // |          |         |     |     |     |  4  | 5 |  6  |   |   |      |  UP  |      |
-            // | SHFT     | OUT_TOG |     |     |     |  1  | 2 |  3  |   |   | LEFT | DOWN |  RGT |
-            //            | GUI     |     | SPC |     | ENT | 0 | ALT |
+            // ----------------------------------    ----------------------------------------
+            // |  TAB  |  &  |  `  |  '  |  "  |     |  7  |  8  |  9  |      |      | BKSP |
+            // |  ESC  |     |     |     |     |     |  4  |  5  |  6  |      | UP   |      | 
+            // | SHFT  |     |     |     |     |     |  1  |  2  |  3  | LEFT | DOWN | RGT  |
+            //               |     |     | SPC |     |  0  |  0  |     |
             bindings = <
-                &kp TAB    &kp AMPS  &kp N2  &kp SQT  &kp DQT  &trans    &kp KP_N7  &kp KP_N8  &kp KP_N9  &trans    &trans    &kp BSPC
-                &kp ESC    &trans    &trans  &trans   &trans   &trans    &kp KP_N4  &kp KP_N5  &kp KP_N6  &trans    &kp UP    &trans
-                &kp LSHFT  &trans    &trans  &trans   &trans   &trans    &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp LEFT  &kp DOWN  &kp RIGHT
-                &trans   &trans   &trans    &kp KP_N0  &kp KP_N0  &trans
+                &kp TAB    &kp AMPS  &kp GRAVE  &kp SQT    &kp DQT    &trans    &kp KP_N7  &kp KP_N8  &kp KP_N9  &trans    &trans    &kp BSPC
+                &kp ESC    &trans    &trans     &trans     &trans     &trans    &kp KP_N4  &kp KP_N5  &kp KP_N6  &trans    &kp UP    &trans
+                &kp LSHFT  &trans    &trans     &trans     &trans     &trans    &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp LEFT  &kp DOWN  &kp RIGHT
+                &trans     &trans    &trans     &kp KP_N0  &kp KP_N0  &trans
             >;
         };
 
         raise_layer {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  ?  |  ^  |  !  |  #  |  ~  |   |  _  |  *  |  (  |  )  |  %  | BKSP |
+            // |  TAB |  ?  |  ^  |  !  |  #  |  ~  |   |  *  |  _  |  (  |  )  |  %  | BKSP |
             // | CTRL |  @  |  $  |     |     |     |   |  -  |  +  |  [  |  ]  |  /  |  `   |
-            // | SHFT |     |     |     |     |     |   |  \  |  =  |  {  |  }  | "|" |  &   |
+            // | SHFT |     |     | BT0 |  ^  |     |   |  \  |  =  |  {  |  }  | "|" |  &   |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
             bindings = <
-                &kp TAB     &kp QMARK      &kp CARET  &kp EXCL      &kp HASH      &kp TILDE       &kp KP_MULTIPLY  &kp UNDER  &kp LPAR  &kp RPAR  &kp PRCNT  &kp BSPC
-                &kp LCTRL   &kp AT         &kp DLLR   &trans        &trans        &trans          &kp MINUS        &kp PLUS   &kp LBKT  &kp RBKT  &kp FSLH   &kp GRAVE
-                &kp LSHFT   &bt BT_CLR     &trans     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &kp BLSH         &tdeq      &kp LBRC  &kp RBRC  &kp PIPE   &kp AMPS
-                &trans        &trans        &trans          &trans     &trans           &trans
+                &kp TAB     &kp QMARK      &kp CARET  &kp EXCL      &kp HASH   &kp TILDE       &kp KP_MULTIPLY  &kp UNDER  &kp LPAR  &kp RPAR  &kp PRCNT  &kp BSPC
+                &kp LCTRL   &kp AT         &kp DLLR   &trans        &trans     &trans          &kp MINUS        &kp PLUS   &kp LBKT  &kp RBKT  &kp FSLH   &kp GRAVE
+                &kp LSHFT   &trans         &trans     &bt BT_SEL 0  &kp CARET  &trans          &kp BLSH         &tdeq      &kp LBRC  &kp RBRC  &kp PIPE   &kp AMPS
+                &trans      &trans         &trans     &trans        &trans     &trans
             >;
         };
     };
