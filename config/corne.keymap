@@ -153,14 +153,14 @@
 
         raise_layer {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  ?  |  ^  |  !  |  #  |  %  |   |  \  |  *  |  (  |  )  |  ~  | BKSP |
+            // |  TAB |  ?  |  ^  |  !  |  #  |  ~  |   |  _  |  *  |  (  |  )  |  %  | BKSP |
             // | CTRL |  @  |  $  |     |     |     |   |  -  |  +  |  [  |  ]  |  /  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  =  |  {  |  }  | "|" |  &   |
+            // | SHFT |     |     |     |     |     |   |  \  |  =  |  {  |  }  | "|" |  &   |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
             bindings = <
-                &kp TAB     &kp QMARK      &kp CARET  &kp EXCL      &kp HASH      &kp PRCNT       &kp BSLH   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE  &kp BSPC
-                &kp LCTRL   &kp AT         &kp DLLR   &trans        &trans        &trans          &kp MINUS  &kp PLUS         &kp LBKT  &kp RBKT  &kp FSLH   &kp GRAVE
-                &kp LSHFT   &bt BT_CLR     &trans     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &kp UNDER  &tdeq            &kp LBRC  &kp RBRC  &kp PIPE   &kp AMPS
+                &kp TAB     &kp QMARK      &kp CARET  &kp EXCL      &kp HASH      &kp TILDE       &kp KP_MULTIPLY  &kp UNDER  &kp LPAR  &kp RPAR  &kp PRCNT  &kp BSPC
+                &kp LCTRL   &kp AT         &kp DLLR   &trans        &trans        &trans          &kp MINUS        &kp PLUS   &kp LBKT  &kp RBKT  &kp FSLH   &kp GRAVE
+                &kp LSHFT   &bt BT_CLR     &trans     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &kp BLSH         &tdeq      &kp LBRC  &kp RBRC  &kp PIPE   &kp AMPS
                 &trans        &trans        &trans          &trans     &trans           &trans
             >;
         };
