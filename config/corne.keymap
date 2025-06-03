@@ -108,7 +108,7 @@
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp LEFT>;
             mods = <MOD_LGUI>;
-            keep-mods = <MOD_LGUI>;
+            keep-mods = <(MOD_LGUI)>;
         };
 
         semi_morph: semi_morph {
@@ -116,7 +116,7 @@
             label = "SEMI_MORPH";
             #binding-cells = <0>;
             bindings = <&kp COLON>, <&kp SEMI>;
-            mods = <MOD_LSFT MOD_RSFT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
