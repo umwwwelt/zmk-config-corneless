@@ -160,7 +160,7 @@
             bindings = <
                 &kp TAB     &kp QMARK      &kp CARET	&kp EXCL     	&kp HASH  	&kp TILDE       &kp KP_MULTIPLY		&kp UNDER	&kp LPAR	&kp RPAR	&kp PRCNT	&kp BSPC
                 &kp LCTRL   &kp AT         &kp DLLR	&trans       	&trans    	&trans          &kp MINUS       	&kp PLUS	&kp LBKT	&kp RBKT	&kp FSLH	&kp GRAVE
-                &kp LSHFT   &trans         &trans	&trans		&kp CARET	&trans		&kp BLSH        	&tdeq		&kp LBRC	&kp RBRC	&kp PIPE	&kp AMPS
+                &kp LSHFT   &trans         &trans	&trans		&kp CARET	&trans		&kp BSLH        	&tdeq		&kp LBRC	&kp RBRC	&kp PIPE	&kp AMPS
                 &trans      &trans         &trans	&trans      	&trans    	&trans
             >;
         };
