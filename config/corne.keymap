@@ -130,9 +130,9 @@
             // | SHFT |     |  Z  |  X  |  C  |  V  |   |  B  |  N   |  M  |  ,  |  .  | RIGHT  |
             //                    | GUI | CMD | SPC |   | SPC | RSE  | ALT |
             bindings = <
-                &kp TAB              &kp Q      &kp W        &tde         &kp R      &kp T    &kp Y  &tdu      &kp I     &kp O      &kp P         &kp BSPC
+                &kp TAB              &kp Q      &kp W        &tde         &kp R      &kp T    &kp Y  &tdu      &kp I     &kp O      &kp P       	&kp BSPC
                 &kp LCTRL            &tda       &kp S        &kp D        &kp F      &kp G    &kp H  &kp J     &kp K     &kp L      &semi_morph		&kp RET
-                &esc_shift LSHFT ESC &kp LSHFT  &kp Z        &kp X        &kp C      &kp V    &kp B  &kp N     &kp M     &c_m       &kp DOT       &kp RIGHT
+                &esc_shift LSHFT ESC &kp LSHFT  &kp Z        &kp X        &kp C      &kp V    &kp B  &kp N     &kp M     &c_m       &kp DOT     	&kp RIGHT
                 &kp LALT             &kp LGUI   &lt 1 SPACE  &lt 2 SPACE  &kp RCTRL  &kp RALT
             >;
         };
@@ -155,13 +155,13 @@
             // -----------------------------------------------------------------------------------------
             // |  TAB |  ?  |  ^  |  !  |  #  |  ~  |   |  *  |  _  |  (  |  )  |  %  | BKSP |
             // | CTRL |  @  |  $  |     |     |     |   |  -  |  +  |  [  |  ]  |  /  |  `   |
-            // | SHFT |     |     | BT0 |  ^  |     |   |  \  |  =  |  {  |  }  | "|" |  &   |
+            // | SHFT |     |     |     |  ^  |     |   |  \  |  =  |  {  |  }  | "|" |  &   |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
             bindings = <
-                &kp TAB     &kp QMARK      &kp CARET  &kp EXCL      &kp HASH   &kp TILDE       &kp KP_MULTIPLY  &kp UNDER	&kp LPAR	&kp RPAR	&kp PRCNT	&kp BSPC
-                &kp LCTRL   &kp AT         &kp DLLR   &trans        &trans     &trans          &kp MINUS        &kp PLUS	&kp LBKT	&kp RBKT	&kp FSLH	&kp GRAVE
-                &kp LSHFT   &trans         &trans     &bt BT_SEL 0	&kp CARET  &trans      &kp BLSH         &tdeq		&kp LBRC	&kp RBRC	&kp PIPE	&kp AMPS
-                &trans      &trans         &trans     &trans      	&trans     &trans
+                &kp TAB     &kp QMARK      &kp CARET	&kp EXCL     	&kp HASH  	&kp TILDE       &kp KP_MULTIPLY		&kp UNDER	&kp LPAR	&kp RPAR	&kp PRCNT	&kp BSPC
+                &kp LCTRL   &kp AT         &kp DLLR	&trans       	&trans    	&trans          &kp MINUS       	&kp PLUS	&kp LBKT	&kp RBKT	&kp FSLH	&kp GRAVE
+                &kp LSHFT   &trans         &trans	&trans		&kp CARET	&trans		&kp BLSH        	&tded		&kp LBRC	&kp RBRC	&kp PIPE	&kp AMPS
+                &trans      &trans         &trans	&trans      	&trans    	&trans
             >;
         };
     };
