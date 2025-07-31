@@ -13,6 +13,10 @@
     tapping-term-ms = <185>;
 };
 
+&sl {
+    release-after-ms = <2000>;
+};
+
 &nice_view_spi {
     cs-gpios = <&pro_micro 16 GPIO_ACTIVE_HIGH>;
 };
@@ -52,7 +56,7 @@
     };
 
     behaviors {
-        esc_shift: esc_shift {
+	    esc_sh: esc_sh {
             compatible = "zmk,behavior-hold-tap";
             label = "ESC_SHIFT";
             #binding-cells = <2>;
@@ -124,16 +128,16 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            // --------------------------------------   -------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP   |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  :  | ENT    |
-            // | SHFT |     |  Z  |  X  |  C  |  V  |   |  B  |  N   |  M  |  ,  |  .  | RIGHT  |
-            //                    | GUI | CMD | SPC |   | SPC | RSE  | ALT |
+            // --------------------------------------   -----------------------------------------
+            // | TAB  |  Q  |  C  |  O   |  P  |  W  |   |  J  |  M   |  D  |  *  |  Y  | BKSP   |
+            // | ESC  |  A  |  S  |  E   |  N  |  F  |   |  L  |  R   |  T  |  I  |  U  | ENT    |
+            // | SHFT |  Z  |  X  |  ?   |  V  |  B  |   |  .  |  H   |  G  |  ,  |  K  | R_SHFT |
+            //                    | LALT | CMD | SPC |   | SPC | CTRL | ALT |
             bindings = <
-                &kp TAB              &kp Q      &kp W        &tde         &kp R      &kp T    &kp Y  &tdu      &kp I     &kp O      &kp P       	&kp BSPC
-                &kp LCTRL            &tda       &kp S        &kp D        &kp F      &kp G    &kp H  &kp J     &kp K     &kp L      &semi_morph		&kp RET
-                &esc_shift LSHFT ESC &kp LSHFT  &kp Z        &kp X        &kp C      &kp V    &kp B  &kp N     &kp M     &c_m       &kp DOT     	&kp RIGHT
-                &kp LALT             &kp LGUI   &lt 1 SPACE  &lt 2 SPACE  &kp RCTRL  &kp RALT
+                &kp TAB           &kp FR_Q      &kp FR_C        &kp FR_O        &kp FR_P      &kp FR_W  /**/  &kp FR_J    &kp FR_M   &kp FR_D  &sl 3       &kp FR_Y  &kp BSPC
+                &kp ESC           &kp FR_A      &kp FR_S        &kp FR_E        &kp FR_N      &kp FR_F  /**/  &kp FR_L    &kp FR_R   &kp FR_T  &kp FR_I    &kp FR_U  &kp RET
+		        &esc_sh LSHFT ESC &kp FR_Z      &kp FR_X        &kp QMARK       &kp FR_V      &kp FR_B  /**/  &kp FR_DOT  &kp FR_H   &kp FR_G  &kp FR_COMM &kp FR_K  &kp RSHFT
+                &kp LALT          &kp LGUI   &lt 1 SPACE  /**/ &lt 2 SPACE  &kp RCTRL  &kp RALT
             >;
         };
 
@@ -164,5 +168,9 @@
                 &trans      &trans         &trans	&trans      	&trans    	&trans
             >;
         };
+
+        accent_layer {
+            
+        }
     };
 };
