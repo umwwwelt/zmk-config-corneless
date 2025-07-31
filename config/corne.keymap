@@ -125,14 +125,14 @@
 
         default_layer {
             // --------------------------------------   -----------------------------------------
-            // | TAB  |  Q  |  C  |  O   |  P  |  W  |   |  J  |  M   |  D  |  !  |  Y  | BKSP   |
+            // | TAB  |  Q  |  C  |  O   |  P  |  W  |   |  J  |  M   |  D  |  *  |  Y  | BKSP   |
             // | ESC  |  A  |  S  |  E   |  N  |  F  |   |  L  |  R   |  T  |  I  |  U  | ENT    |
-            // | SHFT |  Z  |  X  |  ?   |  V  |  B  |   |  :  |  H   |  G  |  ;  |  K  | R_SHFT |
+            // | SHFT |  Z  |  X  |  ?   |  V  |  B  |   |  .  |  H   |  G  |  ,  |  K  | R_SHFT |
             //                    | LALT | CMD | SPC |   | SPC | CTRL | ALT |
             bindings = <
-                &kp TAB           &kp Q      &kp C        &kp O        &kp P      &kp W  /**/  &kp J      &kp M   &kp D  &kp EXCL  &kp Y  &kp BSPC
-                &kp ESC           &kp A      &kp S        &kp E        &kp N      &kp F  /**/  &kp L      &kp R   &kp T  &kp I     &kp U  &kp RET
-		&esc_sh LSHFT ESC &kp Z      &kp X        &kp QMARK    &kp V      &kp B  /**/  &kp COLON  &kp H   &kp G  &kp SEMI  &kp K  &kp RSHFT
+                &kp TAB           &kp FR_Q      &kp FR_C        &kp FR_O        &kp FR_P      &kp FR_W  /**/  &kp FR_J    &kp FR_M   &kp FR_D  &sl 1DK     &kp FR_Y  &kp BSPC
+                &kp ESC           &kp FR_A      &kp FR_S        &kp FR_E        &kp FR_N      &kp FR_F  /**/  &kp FR_L    &kp FR_R   &kp FR_T  &kp FR_I    &kp FR_U  &kp RET
+		        &esc_sh LSHFT ESC &kp FR_Z      &kp FR_X        &kp QMARK       &kp FR_V      &kp FR_B  /**/  &kp FR_DOT  &kp FR_H   &kp FR_G  &kp FR_COMM &kp FR_K  &kp RSHFT
                 &kp LALT          &kp LGUI   &lt 1 SPACE  /**/ &lt 2 SPACE  &kp RCTRL  &kp RALT
             >;
         };
